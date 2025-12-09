@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Adriano Miguel Tanyag – Virtual Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Virtual Assistant portfolio of Adriano Miguel P. Tanyag." />
+  <style>
+    :root {
+      --bg: #f7f7f8;
+      --fg: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px clamp(12px, 4vw, 32px) 40px;
+    }
+
+    header {
+      padding: 16px 0 24px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      font-size: clamp(1.7rem, 3vw, 2rem);
+      font-weight: 600;
+    }
+
+    .role {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      font-size: 0.9rem;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover {
+      border-bottom-color: var(--muted);
+    }
+
+    main { padding-top: 16px; }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .section-sub {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 14px 16px;
+      font-size: 0.92rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 8px 0 0;
+      font-size: 0.9rem;
+    }
+
+    li { margin-bottom: 4px; }
+
+    .label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .tag {
+      font-size: 0.78rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: #fff;
+      white-space: nowrap;
+    }
+
+    .line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    @media (max-width: 900px) {
+      .grid-2 {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding-inline: clamp(10px, 4vw, 16px);
+      }
+      nav {
+        gap: 10px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER -->
+    <header>
+      <div class="top-row">
+        <div>
+          <h1>Adriano Miguel P. Tanyag</h1>
+          <div class="role">Tech-Savvy Virtual Assistant · 9+ Years Corporate Experience</div>
+        </div>
+        <div style="font-size:0.85rem; color:var(--muted);">
+          Pasig, NCR, Philippines · Available for remote work
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#tools">Tools</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ABOUT -->
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+          <p>
+            I am a tech-savvy Virtual Assistant with over 9 years of experience supporting teams in
+            fast-paced corporate and technical environments. My background combines administrative
+            support, project tracking, and technical documentation with hands-on experience in tools
+            like Jira, ServiceNow, CMS platforms, Canva, and Office/Google Workspace.
+          </p>
+          <p style="margin-top:8px;">
+            I help businesses stay organized by managing emails, calendars, tasks, documents, and
+            digital assets—while also handling basic web, design, and technical support when needed.
+          </p>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services">
+        <h2>Services</h2>
+        <p class="section-sub">Ways I can support you and your team.</p>
+        <div class="grid-2">
+          <div class="card">
+            <div class="label">Administrative & Executive Support</div>
+            <ul>
+              <li>Inbox and email management</li>
+              <li>Calendar organization and scheduling</li>
+              <li>Data entry, document formatting, and filing</li>
+              <li>Internet research and information gathering</li>
+              <li>Preparing simple reports and summaries</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="label">Project & Task Coordination</div>
+            <ul>
+              <li>Tracking tasks and tickets (Jira, ServiceNow)</li>
+              <li>Updating project boards and status reports</li>
+              <li>Following up on pending items and deadlines</li>
+              <li>Assisting with basic quality checks and bug tracking</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="card">
+            <div class="label">Technical & Web Support</div>
+            <ul>
+              <li>Basic website and content updates using CMS</li>
+              <li>Simple HTML/CSS edits for layouts and content</li>
+              <li>Basic troubleshooting for hardware/software issues</li>
+              <li>Creating and maintaining technical documentation and guides</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="label">Creative & Marketing Support</div>
+            <ul>
+              <li>Simple graphics and social posts using Canva</li>
+              <li>Assisting with email newsletter creation</li>
+              <li>Formatting slide decks and documents</li>
+              <li>Updating web content for campaigns and promotions</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOOLS -->
+      <section id="tools">
+        <h2>Tools & Platforms</h2>
+        <p class="section-sub">Software and platforms I work with comfortably.</p>
+        <div class="grid-2">
+          <div class="card">
+            <div class="label">Project & Workflow</div>
+            <div class="tag-list">
+              <span class="tag">Jira</span>
+              <span class="tag">ServiceNow</span>
+              <span class="tag">Trello</span>
+              <span class="tag">Google Workspace</span>
+              <span class="tag">Microsoft Office</span>
+              <span class="tag">Email & Calendar</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Content, Web & Design</div>
+            <div class="tag-list">
+              <span class="tag">Canva</span>
+              <span class="tag">Adobe Photoshop</span>
+              <span class="tag">CMS (WordPress, Joomla, etc.)</span>
+              <span class="tag">HTML / CSS (basic)</span>
+              <span class="tag">Email Newsletters</span>
+              <span class="tag">Technical Docs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <h2>Experience</h2>
+        <p class="section-sub">Relevant roles that shaped my skills as a Virtual Assistant.</p>
+        <div class="card" style="margin-bottom:12px;">
+          <div class="line">
+            <strong>Technical Support Specialist / Developer</strong>
+            <span>·</span>
+            <span style="color:var(--muted);">Accenture Philippines</span>
+            <span>·</span>
+            <span style="color:var(--muted);">Mar 2019 – Dec 2025</span>
+          </div>
+          <div class="label" style="margin-top:2px;">Taguig, NCR</div>
+          <ul>
+            <li>Manage and track development tasks and support tickets using Jira and ServiceNow.</li>
+            <li>Organize and monitor project-related communication to keep teams aligned.</li>
+            <li>Create and maintain technical documentation, process notes, and user guides.</li>
+            <li>Assist with quality checks, issue tracking, and coordination between teams.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-bottom:12px;">
+          <div class="line">
+            <strong>Web Content & Marketing Support</strong>
+            <span>·</span>
+            <span style="color:var(--muted);">Network Economic Service Ventures (NESV)</span>
+            <span>·</span>
+            <span style="color:var(--muted);">Sep 2016 – Feb 2019</span>
+          </div>
+          <div class="label" style="margin-top:2px;">Pasig, NCR</div>
+          <ul>
+            <li>Updated website content and layouts using CMS platforms.</li>
+            <li>Created HTML email newsletters and supported digital marketing campaigns.</li>
+            <li>Edited graphics and images for use on web and social channels.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-bottom:12px;">
+          <div class="line">
+            <strong>IT Support Intern</strong>
+            <span>·</span>
+            <span style="color:var(--muted);">Inventive Media – Computer IT Training</span>
+            <span>·</span>
+            <span style="color:var(--muted);">Jan 2016 – Apr 2016</span>
+          </div>
+          <div class="label" style="margin-top:2px;">Makati, NCR</div>
+          <ul>
+            <li>Assisted with day-to-day office and administrative tasks.</li>
+            <li>Supported web updates using WordPress and Joomla.</li>
+            <li>Helped the design team with image editing and asset preparation.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="line">
+            <strong>Administrative Assistant</strong>
+            <span>·</span>
+            <span style="color:var(--muted);">Municipality of Pasig</span>
+            <span>·</span>
+            <span style="color:var(--muted);">May 2013 – May 2013</span>
+          </div>
+          <div class="label" style="margin-top:2px;">Pasig, NCR</div>
+          <ul>
+            <li>Handled document filing, data encoding, and records organization.</li>
+            <li>Assisted with public-facing requests and basic office logistics.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- EDUCATION & CONTACT -->
+      <section id="contact">
+        <h2>Education & Contact</h2>
+        <div class="grid-2">
+          <div class="card">
+            <div class="label">Education</div>
+            <p><strong>Bachelor of Science in Information Technology</strong><br />
+            Polytechnic University of the Philippines (PUP)<br />
+            June 2012 – May 2016</p>
+          </div>
+          <div class="card">
+            <div class="label">Contact</div>
+
+            <p class="line">
+              <span class="label">Email</span>
+              <a href="mailto:mackyfamous@gmail.com">mackyfamous@gmail.com</a>
+            </p>
+
+            <p class="line">
+              <span class="label">Mobile</span>
+              <a href="tel:+639954772115">+63 995 477 2115</a>
+            </p>
+
+            <p class="line">
+              <span class="label">LinkedIn</span>
+              <a href="https://linkedin.com/in/adriano-miguel-tanyag" target="_blank">
+                linkedin.com/in/adriano-miguel-tanyag
+              </a>
+            </p>
+
+            <p class="line">
+              <span class="label">GitHub</span>
+              <a href="https://github.com/mackyfamous" target="_blank">
+                github.com/mackyfamous
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>© <span id="year"></span> Adriano Miguel P. Tanyag</span>
+        <span>Virtual Assistant · Remote-ready</span>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
